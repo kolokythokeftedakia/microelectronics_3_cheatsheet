@@ -1,0 +1,29 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage[fontsize=9pt]{scrextend}
+\usepackage[portrait,textwidth=20.2cm,vmargin=0.5cm,includeheadfoot]{geometry}
+\usepackage{amsmath,amsfonts,amssymb,mathtools,xfrac,amsthm,gensymb,siunitx}
+% \usepackage[x11names]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage[tableposition=top]{caption}
+\usepackage[english]{babel}
+\usepackage{fontspec}
+\usepackage[normalize-symbols]{textalpha}
+\usepackage{unicode-math}
+\setmathfont{STIX TWO MATH}
+\setmainfont{STIX TWO TEXT}
+\usepackage[unicode,luatex,hidelinks]{hyperref}
+\hypersetup{pdfsubject={Microelectronics III cheatsheet},
+  pdftitle={Microelectronics III cheatsheet},
+  pdfauthor={kolokythokeftedakia}}
+
+% ========================================================================
+
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\newcommand{\dd}[1]{\,\mathrm{d}{#1}}
+\newcommand{\der}[2]{\frac{\dd{#1}}{\dd{#2}}}
+\newcommand{\nder}[2]{\frac{\dd{}^{#1}}{\dd{{#2}^{#1}}}}
+
+\newcolumntype{C}{>{$\displaystyle}l<{$}}
+\renewcommand{\arraystretch}{2.2}
